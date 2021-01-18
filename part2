@@ -1,0 +1,73 @@
+<style>
+  body{
+    font-family: monospace;
+  }
+  .navbar{
+    color: white;
+    background: black;
+    padding: 5px 0px 5px 0px;    
+  }
+  li{
+    display: inline;
+    font-size: 20px;
+    margin: 30px;
+    margin-left: 35px;
+  }
+  li:hover{
+    color: red;
+  }
+  .card1{
+    width: 200px;
+    border: 2px solid red;
+    margin-left: 5px;
+    padding: 9px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: justify;
+    border-radius: 10px;
+    margin-top: 10px;
+    float: left;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 
+    0 6px 6px rgba(0,0,0,0.23);
+  }
+  h2{
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  
+</style>
+
+
+<body>
+  <div>
+    <h1 style="margin-left: 20px">Home</h1>
+    <nav class="navbar">
+    <ul>
+      <li>Cards</li>
+      <li>Contact</li>
+      <li>Info</li>
+      <li>Construction</li>
+    <ul>
+    </nav>
+  </div>
+
+  <div class="card1">
+    <h2>Albert Einstein</h2><hr>
+    <p>Albert Einstein was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics. His work is also known for its influence on the philosophy of science.</p>
+    <p>Born: March 14, 1879.</p>
+    <p>Place of Birth: Germany.</p>
+  </div>
+
+  <div class="card1">
+    <h2>Albert Einstein</h2><hr>
+    <p>Albert Einstein was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics. His work is also known for its influence on the philosophy of science.</p>
+    <p>Born: March 14, 1879.</p>
+    <p>Place of Birth: <a href="https://www.google.com">Germany</a>.</p>
+  </div>
+
+  <div class="card1">
+    <h2>Albert Einstein</h2><hr>
+    <p>Albert Einstein was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics. His work is also known for its influence on the philosophy of science.</p>
+    <p>Born: March 14, 1879.</p>
+    <p>Place of Birth: Germany.</p>
+  </div>
