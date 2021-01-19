@@ -1,73 +1,85 @@
 <style>
-  body{
-    font-family: monospace;
-  }
-  .navbar{
-    color: white;
-    background: black;
-    padding: 5px 0px 5px 0px;    
-  }
-  li{
-    display: inline;
-    font-size: 20px;
-    margin: 30px;
-    margin-left: 35px;
-  }
-  li:hover{
-    color: red;
-  }
-  .card1{
-    width: 200px;
-    border: 2px solid red;
-    margin-left: 5px;
-    padding: 9px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    text-align: justify;
-    border-radius: 10px;
-    margin-top: 10px;
-    float: left;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 
-    0 6px 6px rgba(0,0,0,0.23);
-  }
-  h2{
-    margin-bottom: 0px;
-    text-align: center;
-  }
-  
+.button{
+  background-color: gold; 
+  border: 2px solid ;
+  border-radius: 10px;
+}
+.button2{
+  background-color: gold; 
+  border: 2px solid ;
+  border-radius: 10px;
+}
+.button3{
+  background-color: gold; 
+  border: 2px solid ;
+  border-radius: 10px;
+}
+
+.button:hover{
+  animation-name: one;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes one{
+  100%{background-color: green;
+  color: white;}  
+}
+
+/* [Normal hover structure] */
+.button2:hover{
+  /* border-radius: 9px;
+  background-color: black;
+  color: white; */
+  transform: scale(1.1);
+}
+
+.button3{
+  position: relative;
+  animation-name: two;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes two{
+  0%{background-color: gold; left: 0px; top: 0px; }
+  25%{background-color:green;left: 150px; top: 0px;}
+  50%{background-color:gold;left: 150px; top:150px;}
+  75%{background-color:cyan;left: 0px; top: 150px;}
+  100%{background-color:gold;left: 0px; top: 0px;}
+}
+
+div{
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  background-color: gold;
+  border: 2.5px solid;
+  border-radius: 50%;
+  position: relative;
+  animation-name: circle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circle{
+  0%{background-color: gold;}
+  25%{background-color: green;}
+  50%{background-color: gold;}
+  75%{background-color: cyan;}
+  100%{background-color: gold;}
+}
+
+
+
 </style>
 
 
-<body>
-  <div>
-    <h1 style="margin-left: 20px">Home</h1>
-    <nav class="navbar">
-    <ul>
-      <li>Cards</li>
-      <li>Contact</li>
-      <li>Info</li>
-      <li>Construction</li>
-    <ul>
-    </nav>
-  </div>
 
-  <div class="card1">
-    <h2>Albert Einstein</h2><hr>
-    <p>Albert Einstein was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics. His work is also known for its influence on the philosophy of science.</p>
-    <p>Born: March 14, 1879.</p>
-    <p>Place of Birth: Germany.</p>
-  </div>
 
-  <div class="card1">
-    <h2>Albert Einstein</h2><hr>
-    <p>Albert Einstein was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics. His work is also known for its influence on the philosophy of science.</p>
-    <p>Born: March 14, 1879.</p>
-    <p>Place of Birth: <a href="https://www.google.com">Germany</a>.</p>
-  </div>
 
-  <div class="card1">
-    <h2>Albert Einstein</h2><hr>
-    <p>Albert Einstein was a German-born theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics. His work is also known for its influence on the philosophy of science.</p>
-    <p>Born: March 14, 1879.</p>
-    <p>Place of Birth: Germany.</p>
-  </div>
+<input class="button" type="submit" value="submit">
+<input class="button2" type="submit" value="Click">
+<input class="button3" type="submit" value="sign in">
+
+<div> </div>
