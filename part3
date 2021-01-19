@@ -1,0 +1,58 @@
+#ANIMATION HOVER
+
+<style>
+.button{
+  background-color: gold; 
+  border: 2px solid ;
+  border-radius: 10px;
+}
+.button2{
+  background-color: gold; 
+  border: 2px solid ;
+  border-radius: 10px;
+}
+.button3{
+  background-color: gold; 
+  border: 2px solid ;
+  border-radius: 10px;
+}
+
+.button:hover{
+  animation-name: one;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes one{
+  100%{background-color: green;
+  color: white;}  
+}
+
+/* [Normal hover structure] */
+.button2:hover{
+  /* border-radius: 9px;
+  background-color: black;
+  color: white; */
+  transform: scale(1.1);
+}
+
+.button3{
+  position: relative;
+  animation-name: two;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes two{
+  0%{left: 0px;}
+  25%{left: 25px; bottom: -25px;}
+  50%{bottom: -25px;}
+  75%{right: 25px;}
+  100%{left: 0px;}
+}
+</style>
+
+
+<input class="button" type="submit" value="submit">
+<input class="button2" type="submit" value="Click">
+<input class="button3" type="submit" value="sign in">
