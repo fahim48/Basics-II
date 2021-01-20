@@ -1,0 +1,72 @@
+<style>
+.one{
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 10px;
+  position: relative;
+}
+.one:hover{
+  transform: scale(1.05);
+}
+
+.two{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 10px;
+}
+.three{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 10px;
+}
+.four{
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  border-radius: 10px;
+}
+.five{
+  width: 100px;
+  height: 100px;
+  background-color: cyan;
+  border-radius: 10px;
+}
+.all{
+  background-color: black;
+  width: auto;
+  height: auto;
+  border: 10px solid;
+  border-radius: 10px;
+  display:flex;
+  /* flex-direction: column-reverse; */
+  /* justify-content: space-evenly; */
+  align-items: center;
+  text-wrap: wrap;
+}
+.letter{
+  position: relative;
+  top: 50%;
+  left: 100%;
+  transform: translate(-179%, -50%);
+  font-size: 80px;
+  
+}
+a{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+
+</style>
+
+<div class="all">
+<div class="one"><a href="" class="image"></a> </div> 
+<div class="two"><div class="letter"><a href="https://www.google.com">&copy</a></div></div>
+<div class="three"></div>
+<div class="four"></div>
+<div class="five"></div>
+</div>
