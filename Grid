@@ -1,0 +1,81 @@
+<style>
+.one{
+  background-color: crimson;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: header;
+}
+
+.two{
+  background-color: gold;
+  grid-area: adv1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.three{
+  background-color: cyan;
+  grid-area: content1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.four{
+  background-color: green;
+  grid-area: content2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.five{
+  background-color: LightPink;
+  grid-area: adv2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.six{
+  background: LightSalmon;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  font-size: 40px;
+  background: gray;
+  /* display: flex;
+  justify-content: center;
+  height: 500px;
+  align-items: center; */
+  height: 500px;
+  width: 240px;
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  grid-template-rows: 80px 1fr 1fr 40px ;
+  grid-gap: 5px;
+  border: 4px solid;
+  grid-template-areas:
+  "header header header"
+  "adv1 content1 adv2"
+  "adv1 content2 adv2"
+  "footer footer footer"
+}
+</style>
+
+
+<div class="container">
+<div class="one"> 1 </div>
+<div class="two"> 2 </div>
+<div class="three"> 3 </div>
+<div class="four"> 4 </div>
+<div class="five"> 5 </div>
+<div class="six"> 6 </div>
+</div>
